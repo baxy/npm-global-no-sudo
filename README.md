@@ -35,7 +35,12 @@ chmod +x npm-global-no-sudo.sh
     source ~/.bashrc
     ```
 
-2. The script may cause issues if [Node Version Manager](https://github.com/creationix/nvm) is found installed. In this case it will exit and do nothing.
+2. If NPM needs to be updated, `sudo` is still required:
+    ```
+    sudo npm install -g npm@latest
+    ```
+
+3. The script may cause issues if [Node Version Manager](https://github.com/creationix/nvm) is found installed. In this case it will exit and do nothing.
 
 ### License
 
